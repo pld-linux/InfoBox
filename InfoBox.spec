@@ -9,7 +9,7 @@ Source0:	http://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.bz2
 # Source0-md5:	738a95010d115c6d460e15e8a736b067
 URL:		http://developer.berlios.de/project/showfiles.php?group_id=1595
 Patch0:		%{name}-doc.patch
-Requires:	dbus >= 0.30
+Requires:	dbus-X11
 Requires:	gtk+2 >= 2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
