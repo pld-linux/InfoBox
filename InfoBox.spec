@@ -1,8 +1,11 @@
+# TODO:
+#	- check BRs, R:gtk+2 probably to be removed
+#
 Summary:	InfoBox - notification tool
 Summary(pl):	InfoBox - system powiadomieñ
 Name:		InfoBox
 Version:	0.9
-Release:	1
+Release:	0.9
 License:	GPL
 Group:		X11/Applications
 Source0:	http://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.bz2
