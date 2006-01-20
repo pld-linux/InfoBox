@@ -1,0 +1,22 @@
+--- InfoBox-0.9/Makefile.am	2005-09-14 16:50:14.000000000 +0200
++++ InfoBox-0.9/Makefile.am.orig	2006-01-20 14:43:39.000000000 +0100
+@@ -14,7 +14,7 @@
+ 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
+ 
+ 
+-infoboxdocdir = ${prefix}/doc/infobox-@VERSION@
++infoboxdocdir = ${datadir}/doc/infobox-@VERSION@
+ infoboxdoc_DATA = \
+ 	README\
+ 	COPYING\
+--- InfoBox-0.9/Makefile.in 2005-09-14 16:50:26.000000000 +0200
++++ InfoBox-0.9/Makefile.in 2006-01-20 14:50:29.000000000 +0100
+@@ -168,7 +168,7 @@
+ servicedir = $(DBUS_SERVICES_DIR)
+ service_in_files = org.freedesktop.Notifications.service.in
+ service_DATA = $(service_in_files:.service.in=.service)
+-infoboxdocdir = ${prefix}/doc/infobox-@VERSION@
++infoboxdocdir = ${datadir}/doc/infobox-@VERSION@
+ infoboxdoc_DATA = \
+        README\
+        COPYING\
