@@ -1,6 +1,3 @@
-# TODO:
-#	- check BRs, R:gtk+2 probably to be removed
-#
 Summary:	InfoBox - notification tool
 Summary(pl):	InfoBox - system powiadomieñ
 Name:		InfoBox
@@ -12,8 +9,10 @@ Source0:	http://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.bz2
 # Source0-md5:	738a95010d115c6d460e15e8a736b067
 URL:		http://developer.berlios.de/project/showfiles.php?group_id=1595
 Patch0:		%{name}-doc.patch
+BuildRequires:	dbus-glib-devel >= 0.30
+BuildRequires:	gtk+2-devel >= 2:2.6.0
+BuildRequires:	pkgconfig
 Requires:	dbus-X11
-Requires:	gtk+2 >= 2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,8 +33,7 @@ ze wszystkimi ¶rodowiskami.
 %patch0 -p1
 
 %build
-%configure \
-	--prefix=%{_prefix}
+%configure
 
 %{__make}
 %{__make} check
@@ -46,12 +44,14 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/infobox*
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_datadir}/doc/infobox-%{version}/*
+%doc AUTHORS README TODO infoboxd.cfg.example
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/infoboxd
 %{_sysconfdir}/dbus-1/system.d/%{name}d.conf
