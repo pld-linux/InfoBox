@@ -1,5 +1,5 @@
 Summary:	InfoBox - notification tool
-Summary(pl.UTF-8):   InfoBox - system powiadomień
+Summary(pl.UTF-8):	InfoBox - system powiadomień
 Name:		InfoBox
 Version:	0.9
 Release:	0.9
