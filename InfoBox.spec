@@ -1,5 +1,5 @@
 Summary:	InfoBox - notification tool
-Summary(pl):	InfoBox - system powiadomieñ
+Summary(pl.UTF-8):   InfoBox - system powiadomieÅ„
 Name:		InfoBox
 Version:	0.9
 Release:	0.9
@@ -21,12 +21,12 @@ InfoBox is a notification tool based on specifications from
 InformationBox. It's meant for FVWM-Crystal, but should work with
 other window managers.
 
-%description -l pl
-InfoBox jest systemem powiadomieñ opartym o specyfikacjê
-<http://www.galago-project.org/>. Projektowany by³ dla powiadomieñ
-D-BUS, i potrafi je wy¶wietlaæ. Wzorowany jest na InformationBox z
-FVWM-Crystal. Przeznaczony by³ dla FVWM-Crystal ale powinien pracowaæ
-ze wszystkimi ¶rodowiskami.
+%description -l pl.UTF-8
+InfoBox jest systemem powiadomieÅ„ opartym o specyfikacjÄ™
+<http://www.galago-project.org/>. Projektowany byÅ‚ dla powiadomieÅ„
+D-BUS, i potrafi je wyÅ›wietlaÄ‡. Wzorowany jest na InformationBox z
+FVWM-Crystal. Przeznaczony byÅ‚ dla FVWM-Crystal ale powinien pracowaÄ‡
+ze wszystkimi Å›rodowiskami.
 
 %prep
 %setup -q
